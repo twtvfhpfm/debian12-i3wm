@@ -1,0 +1,7 @@
+apt install vim network-manager-gnome lightdm i3 fcitx5 firefox-esr thunar mousepad gvfs-backends gvfs-fuse thunar-archive-plugin lxappearance volumeicon-alsa pavucontrol pulseaudio xfce4-power-manager fcitx5-chinese-addons fonts-noto-cjk mirage
+
+apt install bluez blueman xserver-xorg-input-synaptics picom deepin-screen-recorder deepin-calculator git-lfs git
+
+nm-applet没有有线连接：
+/etc/network/interfaces中删除有线相关配置
+
