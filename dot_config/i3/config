@@ -42,6 +42,7 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id volumeicon
 exec --no-startup-id fcitx5
 exec --no-startup-id xfce4-power-manager
+exec --no-startup-id xfce4-clipman
 exec synclient TapButton1=1
 exec synclient TapButton2=3
 exec synclient TapButton3=2
@@ -188,7 +189,7 @@ for_window [class="(?i)thunar"] layout tabbed
 #弹出的窗口统一设置成浮动类型
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
-for_window [class="(?i)gnome-screenshot"] floating enable
+for_window [class="(?i)blueman-manager"] floating enable
 
 # => 暂存窗口（额外的可隐藏浮动窗口，取消浮动还原成普通窗口）
 # 转换普通窗口为暂存窗口
