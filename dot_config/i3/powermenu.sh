@@ -1,5 +1,5 @@
 #!/bin/bash
-ans=$(zenity --info --title "PowerMenu" --text "Choose an action" --ok-label lock --extra-button suspend --extra-button poweroff --extra-button reboot)
+ans=$(zenity --info --title "PowerMenu" --text "Choose an action" --ok-label lock --extra-button suspend --extra-button poweroff --extra-button reboot --extra-button expand --extra-button mirror --extra-button single)
 rc=$?
 case "$rc-$ans" in
 	"0-")
@@ -17,6 +17,15 @@ case "$rc-$ans" in
 	"1-reboot")
 		echo "reboot"
 		systemctl reboot
+		;;
+	"1-expand")
+		xrandr --output HDMI-1 --auto --left-of eDP-1
+		;;
+	"1-mirror")
+		xrandr --output HDMI-1 --same-as eDP-1
+		;;
+	"1-single")
+		xrandr --output HDMI-1 --off
 		;;
 esac
 
