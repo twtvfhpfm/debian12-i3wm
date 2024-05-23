@@ -1,4 +1,5 @@
 #!/bin/bash
+nmcli device set wlan-xxxxx managed no
 /sbin/iptables -t nat -D POSTROUTING 1
 sleep 1
 killall hostapd
