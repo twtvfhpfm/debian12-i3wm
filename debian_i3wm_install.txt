@@ -16,8 +16,9 @@ sudo groupadd usbfs
 sudo usermod -aG vboxusers xu
 sudo usermod -aG usbfs
 
-wpa enterprise peap连接失败：
-wpa_supplicant 2.10有问题，降级到2.9后手动连接正常，用NetworkManager还是有问题
+NetworkManager开热点
+在/etc/NetworkManager/NetworkManager.conf中的[main]下添加
+firewall-backend=iptables
 
 xfce4-power-manager托盘图标:
 #mkdir -p ~/.local/share/icons/Adwaita/scalable/status
