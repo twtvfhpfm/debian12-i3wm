@@ -1,0 +1,1 @@
+ACTION=="bind", SUBSYSTEMS=="misc", RUN+="/home/xu/workspace/debian12-i3wm/fixmouse.sh"

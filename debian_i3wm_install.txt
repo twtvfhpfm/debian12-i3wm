@@ -20,6 +20,8 @@ NetworkManager开热点
 在/etc/NetworkManager/NetworkManager.conf中的[main]下添加
 firewall-backend=iptables
 
+cp 50-mouse.rules /etc/udev/rules.d
+
 xfce4-power-manager托盘图标:
 #mkdir -p ~/.local/share/icons/Adwaita/scalable/status
 #cd ~/.local/share/icons/Adwaita/scalable/status
