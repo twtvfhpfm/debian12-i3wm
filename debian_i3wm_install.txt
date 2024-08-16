@@ -1,4 +1,4 @@
-apt install vim network-manager-gnome lightdm i3 fcitx5 firefox-esr thunar mousepad gvfs-backends gvfs-fuse thunar-archive-plugin lxappearance volumeicon-alsa pavucontrol pulseaudio xfce4-power-manager fcitx5-chinese-addons fonts-noto-cjk mirage fonts-noto-color-emoji
+apt install vim network-manager-gnome lightdm i3 fcitx5 firefox-esr thunar mousepad gvfs-backends gvfs-fuse thunar-archive-plugin lxappearance volumeicon-alsa pavucontrol pulseaudio xfce4-power-manager fcitx5-chinese-addons fonts-noto-cjk mirage fonts-noto-color-emoji xserver-xorg-input-libinput xserver-xorg-input-evdev
 
 apt install bluez blueman xserver-xorg-input-synaptics picom deepin-screen-recorder deepin-calculator git-lfs git xfce4-clipman elementary-xfce-icon-theme vim rofi zenity
 

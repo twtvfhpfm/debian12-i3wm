@@ -15,7 +15,7 @@ killall dnsmasq
 sleep 1
 sed "s/interface_name/$interface/g" dnsmasq.conf > /tmp/dnsmasq.conf
 sed "s/interface_name/$interface/g" hostapd.conf > /tmp/hostapd.conf
-/sbin/hostapd -B -dd -t -f /tmp/hostapd.log /tmp/hostapd.conf
+/sbin/hostapd -B -d -t -f /tmp/hostapd.log /tmp/hostapd.conf
 /sbin/dnsmasq -C /tmp/dnsmasq.conf
 ip addr replace 192.168.233.1/24 dev $interface
 echo 1 > /proc/sys/net/ipv4/ip_forward
