@@ -13,7 +13,7 @@ case "$rc-$ans" in
 		xrandr --output HDMI-1 --off
 		;;
 	"1-mirror")
-		xrandr --output HDMI-1 --same-as eDP-1
+		xrandr --output HDMI-1 --auto --same-as eDP-1
 		;;
 	"1-poweroff")
 		echo "poweroff"
@@ -22,6 +22,10 @@ case "$rc-$ans" in
 	"1-reboot")
 		echo "reboot"
 		systemctl reboot
+		;;
+	"1-scale")
+		echo "scale"
+		xrandr --output HDMI-1 --scale 0.5x0.5
 		;;
 esac
 

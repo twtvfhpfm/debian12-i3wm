@@ -206,8 +206,10 @@ for_window [class="(?i)VirtualBox Machine"] layout tabbed
 #弹出的窗口统一设置成浮动类型
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
+for_window [window_role="vlc-media-info"] floating enable
 for_window [class="(?i)blueman-manager"] floating enable
 for_window [class="(?i)pavucontrol"] floating enable
+for_window [class="(?i)wechat"] floating enable
 
 # => 暂存窗口（额外的可隐藏浮动窗口，取消浮动还原成普通窗口）
 # 转换普通窗口为暂存窗口
