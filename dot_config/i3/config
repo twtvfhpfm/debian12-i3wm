@@ -84,7 +84,8 @@ tiling_drag modifier titlebar
 bindsym $mod+x move workspace to output next
 bindsym $mod+p exec bash ~/.config/i3/powermenu.sh
 bindsym $mod+o exec i3lock -i ~/.config/i3/lock.png -t
-bindsym $mod+Shift+s exec LD_LIBRARY_PATH=/usr/local/lib /usr/local/bin/deepin-screen-recorder
+#bindsym $mod+Shift+s exec LD_LIBRARY_PATH=/usr/local/lib /usr/local/bin/deepin-screen-recorder
+bindsym $mod+Shift+s exec flameshot gui
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
