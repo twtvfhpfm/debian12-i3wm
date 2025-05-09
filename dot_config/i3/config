@@ -84,6 +84,7 @@ tiling_drag modifier titlebar
 bindsym $mod+x move workspace to output next
 bindsym $mod+p exec bash ~/.config/i3/powermenu.sh
 bindsym $mod+o exec i3lock -i ~/.config/i3/lock.png -t
+bindsym $mod+u exec python3 ~/workspace/debian12-i3wm/kvm_usb.py
 #bindsym $mod+Shift+s exec LD_LIBRARY_PATH=/usr/local/lib /usr/local/bin/deepin-screen-recorder
 bindsym $mod+Shift+s exec flameshot gui
 
@@ -211,6 +212,7 @@ for_window [window_role="vlc-media-info"] floating enable
 for_window [class="(?i)blueman-manager"] floating enable
 for_window [class="(?i)pavucontrol"] floating enable
 for_window [class="(?i)wechat"] floating enable
+for_window [class="(?i)tk"] floating enable
 
 # => 暂存窗口（额外的可隐藏浮动窗口，取消浮动还原成普通窗口）
 # 转换普通窗口为暂存窗口

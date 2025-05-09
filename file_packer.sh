@@ -2,7 +2,7 @@
 
 # 设置要打包的文件目录
 DIR="/home/xu/Documents/log"
-BAK_DIR="/home/xu/Documents/log/bak"
+BAK_DIR="/home/xu/Documents/log_bak"
 TMP_FILE="/tmp/file_packer.tmp"
 
 cd $DIR
